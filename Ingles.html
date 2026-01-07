@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inglés</title>
+
+    <style>
+        body { background-color: #f8d7e8; font-family: Arial; padding: 20px; }
+        h1 { color: #c25287; }
+        a { color: #c25287; font-weight: bold; }
+         /* NUEVO */
+  .desplegable {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    user-select: none;
+  }
+
+  .flecha {
+    transition: transform 0.3s;
+    font-size: 20px;
+  }
+
+  .girada {
+    transform: rotate(90deg);
+  }
+
+  .contenido {
+    display: none;
+    margin-left: 20px;
+  }
+  video {
+    display: block;
+    margin: 30px auto;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+<a href="Index.html">← Regresar</a>
+<h1>Inglés</h1>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido1', 'flecha1')">
+  <span class="flecha" id="flecha1">▶</span>
+  1. SIMPLE PAST
+</h2>
+<div id="contenido1" class="contenido">
+  <p><b>Explicación...</b></p>
+  <P><section class="materia">
+    <h2>📘 Simple Past (Pasado Simple)</h2>
+
+    <p>
+        El <strong>Simple Past</strong> se utiliza para hablar de
+        <strong>acciones que ocurrieron y terminaron en el pasado</strong>,
+        en un tiempo específico.
+    </p>
+
+    <h3>📌 ¿Cuándo se usa?</h3>
+    <ul>
+        <li>Acciones que sucedieron en el pasado y ya terminaron.</li>
+        <li>Hechos históricos o eventos pasados.</li>
+        <li>Acciones que ocurrieron en un momento específico.</li>
+    </ul>
+
+    <h3>🧱 Estructura</h3>
+    <p><strong>Oraciones afirmativas:</strong></p>
+    <p>Sujeto + verbo en pasado + complemento</p>
+    <p><em>Ejemplo:</em> I <strong>played</strong> soccer yesterday.</p>
+
+    <p><strong>Oraciones negativas:</strong></p>
+    <p>Sujeto + did not + verbo en forma base</p>
+    <p><em>Ejemplo:</em> I <strong>did not play</strong> soccer yesterday.</p>
+
+    <p><strong>Oraciones interrogativas:</strong></p>
+    <p>Did + sujeto + verbo en forma base?</p>
+    <p><em>Ejemplo:</em> <strong>Did</strong> you <strong>play</strong> soccer yesterday?</p>
+
+    <h3>📝 Verbos regulares e irregulares</h3>
+    <p>
+        Los <strong>verbos regulares</strong> forman el pasado agregando
+        <strong>-ed</strong>.
+    </p>
+    <p><em>Ejemplo:</em> play → played</p>
+
+    <p>
+        Los <strong>verbos irregulares</strong> cambian su forma y no siguen
+        una regla específica.
+    </p>
+    <p><em>Ejemplo:</em> go → went</p>
+
+    <h3>⏰ Expresiones de tiempo comunes</h3>
+    <ul>
+        <li>Yesterday</li>
+        <li>Last night / last week / last year</li>
+        <li>Two days ago</li>
+        <li>In 2020</li>
+    </ul>
+</section>
+</P>
+</div>
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+
+<h2 class="desplegable" onclick="toggleContenido('contenido2', 'flecha2')">
+  <span class="flecha" id="flecha2">▶</span>
+  2. PRESENT SIMPLE
+</h2>
+<div id="contenido2" class="contenido">
+  <p><b>Explicación...</b></p>
+  <p><h2>📗 Present Simple (Presente Simple)</h2>
+
+<table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:center;">
+    <tr style="background-color:#f8a5c2;">
+        <th>Aspecto</th>
+        <th>Estructura</th>
+        <th>Ejemplo</th>
+    </tr>
+
+    <tr>
+        <td>Uso</td>
+        <td>Acciones habituales, rutinas y hechos generales</td>
+        <td>I study English every day.</td>
+    </tr>
+
+    <tr>
+        <td>Afirmativa</td>
+        <td>Sujeto + verbo (+ s/es en 3ra persona)</td>
+        <td>She <strong>studies</strong> English.</td>
+    </tr>
+
+    <tr>
+        <td>Negativa</td>
+        <td>Sujeto + do / does not + verbo base</td>
+        <td>She does not study English.</td>
+    </tr>
+
+    <tr>
+        <td>Interrogativa</td>
+        <td>Do / Does + sujeto + verbo base?</td>
+        <td>Does she study English?</td>
+    </tr>
+
+    <tr>
+        <td>Tercera persona</td>
+        <td>Se agrega -s o -es al verbo</td>
+        <td>play → plays</td>
+    </tr>
+
+    <tr>
+        <td>Adverbios de frecuencia</td>
+        <td>Always, usually, often, sometimes, never</td>
+        <td>I always do my homework.</td>
+    </tr>
+</table>
+</p>
+<a href="https://www.britishcouncil.org.mx/blog/present-simple" target="_blank">Más 
+        información sobre present simple</a>
+</div>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido3', 'flecha3')">
+  <span class="flecha" id="flecha3">▶</span>
+  3. PRESENT CONTINUOS
+</h2>
+<div id="contenido3" class="contenido">
+  <p><b>Explicación...</b></p>
+  <p><h2>📙 Present Continuous (Presente Continuo)</h2>
+
+<p>
+    El <strong>Present Continuous</strong> se utiliza para hablar de
+    <strong>acciones que están ocurriendo en este momento</strong> o
+    situaciones temporales.
+</p>
+
+<h3>📌 ¿Cuándo se usa?</h3>
+<ul>
+    <li>Acciones que están pasando ahora.</li>
+    <li>Situaciones temporales.</li>
+    <li>Planes o acciones futuras ya organizadas.</li>
+</ul>
+
+<h3>🧱 Estructura</h3>
+<p><strong>Afirmativa:</strong></p>
+<p>Sujeto + am / is / are + verbo + ing</p>
+<p><em>Ejemplo:</em> I <strong>am studying</strong> English.</p>
+
+<p><strong>Negativa:</strong></p>
+<p>Sujeto + am / is / are + not + verbo + ing</p>
+<p><em>Ejemplo:</em> She <strong>is not working</strong> today.</p>
+
+<p><strong>Interrogativa:</strong></p>
+<p>Am / Is / Are + sujeto + verbo + ing?</p>
+<p><em>Ejemplo:</em> <strong>Are</strong> you <strong>listening</strong> to music?</p>
+
+<h3>📝 Reglas del verbo + ing</h3>
+<ul>
+    <li>La mayoría de los verbos solo agregan <strong>-ing</strong>.</li>
+    <li>Si el verbo termina en <strong>-e</strong>, se elimina: make → making.</li>
+    <li>Si el verbo es corto y termina en consonante-vocal-consonante, se duplica la consonante: run → running.</li>
+</ul>
+
+<h3>⏰ Expresiones de tiempo comunes</h3>
+<ul>
+    <li>Now</li>
+    <li>Right now</li>
+    <li>At the moment</li>
+    <li>Today</li>
+</ul>
+</p>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido4', 'flecha4')">
+  <span class="flecha" id="flecha4">▶</span>
+  4. OBJETIVOS Y COMPARATIVOS
+</h2>
+<div id="contenido4" class="contenido">
+  <p><b>Explicación...</b></p>
+  <p><section class="materia">
+    <h2>📘 Adjetivos y Comparativos</h2>
+
+    <h3>📝 Adjetivos</h3>
+    <p>
+        Los <strong>adjetivos</strong> son palabras que describen o califican
+        a un sustantivo, indicando cómo es una persona, objeto o lugar.
+    </p>
+
+    <p><strong>Ejemplos de adjetivos:</strong></p>
+    <ul>
+        <li>Big (grande)</li>
+        <li>Small (pequeño)</li>
+        <li>Happy (feliz)</li>
+        <li>Fast (rápido)</li>
+    </ul>
+
+    <p><strong>Ejemplo en oración:</strong></p>
+    <p>The house is <strong>big</strong>.</p>
+
+    <hr>
+
+    <h3>📊 Comparativos</h3>
+    <p>
+        Los <strong>comparativos</strong> se utilizan para
+        <strong>comparar dos personas, objetos o situaciones</strong>.
+    </p>
+
+    <h4>📌 Reglas para formar comparativos</h4>
+
+    <ul>
+        <li>
+            <strong>Adjetivos cortos:</strong> se agrega <strong>-er</strong>.
+            <br>Ejemplo: tall → taller
+        </li>
+
+        <li>
+            <strong>Adjetivos largos:</strong> se usa <strong>more</strong>.
+            <br>Ejemplo: beautiful → more beautiful
+        </li>
+
+        <li>
+            <strong>Comparativos irregulares:</strong> cambian totalmente.
+            <br>Ejemplo: good → better / bad → worse
+        </li>
+    </ul>
+
+    <p><strong>Estructura del comparativo:</strong></p>
+    <p>Sujeto + verbo + comparativo + than + complemento</p>
+
+    <p><strong>Ejemplos:</strong></p>
+    <ul>
+        <li>My brother is <strong>taller than</strong> me.</li>
+        <li>This book is <strong>more interesting than</strong> the movie.</li>
+    </ul>
+</section>
+</p>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido5', 'flecha5')">
+  <span class="flecha" id="flecha5">▶</span>
+  5. SPEALLIN BEE
+</h2>
+<div id="contenido5" class="contenido">
+  <p><b>Explicación...</b></p>
+  <p><h2>🐝 Spelling Bee</h2>
+
+<table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:center;">
+    <tr style="background-color:#f8a5c2;">
+        <th>Aspecto</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+    </tr>
+
+    <tr>
+        <td>¿Qué es?</td>
+        <td>Competencia donde los participantes deletrean palabras en inglés correctamente</td>
+        <td>Spelling words aloud</td>
+    </tr>
+
+    <tr>
+        <td>Objetivo</td>
+        <td>Mejorar la ortografía, pronunciación y vocabulario en inglés</td>
+        <td>Learning new words</td>
+    </tr>
+
+    <tr>
+        <td>¿Cómo funciona?</td>
+        <td>El participante escucha una palabra y la deletrea letra por letra</td>
+        <td>c-a-t</td>
+    </tr>
+
+    <tr>
+        <td>Habilidades que desarrolla</td>
+        <td>Memoria, concentración y pronunciación</td>
+        <td>Correct spelling</td>
+    </tr>
+
+    <tr>
+        <td>Pronunciación</td>
+        <td>Es importante pronunciar cada letra claramente</td>
+        <td>B – E – E</td>
+    </tr>
+
+    <tr>
+        <td>Reglas básicas</td>
+        <td>No repetir letras incorrectamente y respetar turnos</td>
+        <td>One try only</td>
+    </tr>
+
+    <tr>
+        <td>Palabras comunes</td>
+        <td>Palabras cortas y largas según el nivel</td>
+        <td>Apple, Beautiful</td>
+    </tr>
+
+    <tr>
+        <td>Ejemplo en oración</td>
+        <td>Uso de la palabra en contexto</td>
+        <td>The word is <strong>school</strong>.</td>
+    </tr>
+</table>
+</p>
+</div>
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+<h2>📝 Cuestionario de Inglés</h2>
+
+<form id="quiz">
+
+<h3>1. ¿Para qué se usa el Simple Past?</h3>
+<label><input type="radio" name="p1" value="a"> Para acciones que ocurren ahora</label><br>
+<label><input type="radio" name="p1" value="b"> Para acciones que ocurrieron en el pasado</label><br>
+<label><input type="radio" name="p1" value="c"> Para acciones futuras</label><br>
+
+<h3>2. ¿Cuál es la forma correcta en Present Simple?</h3>
+<label><input type="radio" name="p2" value="a"> She play soccer</label><br>
+<label><input type="radio" name="p2" value="b"> She plays soccer</label><br>
+<label><input type="radio" name="p2" value="c"> She playing soccer</label><br>
+
+<h3>3. ¿Cuál es la estructura del Present Continuous?</h3>
+<label><input type="radio" name="p3" value="a"> Sujeto + verbo base</label><br>
+<label><input type="radio" name="p3" value="b"> Sujeto + did + verbo</label><br>
+<label><input type="radio" name="p3" value="c"> Sujeto + am/is/are + verbo + ing</label><br>
+
+<h3>4. ¿Cuál es el comparativo correcto de "good"?</h3>
+<label><input type="radio" name="p4" value="a"> Gooder</label><br>
+<label><input type="radio" name="p4" value="b"> Better</label><br>
+<label><input type="radio" name="p4" value="c"> More good</label><br>
+
+<h3>5. ¿Qué es un Spelling Bee?</h3>
+<label><input type="radio" name="p5" value="a"> Un examen escrito</label><br>
+<label><input type="radio" name="p5" value="b"> Una competencia para deletrear palabras</label><br>
+<label><input type="radio" name="p5" value="c"> Un juego de lectura</label><br>
+
+<br>
+<button type="button" onclick="calificar()">Calificar</button>
+</form>
+
+<p id="resultado" style="font-size:20px; font-weight:bold; margin-top:20px;"></p>
+
+<script>
+function calificar() {
+    let correctas = {
+        p1: "c",
+        p2: "b",
+        p3: "b",
+        p4: "c",
+        p5: "b"
+    };
+
+    let puntos = 0;
+    let total = Object.keys(correctas).length;
+
+    for (let p in correctas) {
+        let seleccionada = document.querySelector('input[name="'+p+'"]:checked');
+        if (seleccionada && seleccionada.value === correctas[p]) {
+            puntos++;
+        }
+    }
+
+    document.getElementById("resultado").innerText =
+        "Obtuviste " + puntos + " de " + total + " respuestas correctas.";
+        document.getElementById("quiz").reset();
+}
+</script>
+
+</body>
+</html>

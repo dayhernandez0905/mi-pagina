@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Codifica Software</title>
+
+    <style>
+        body { background-color: #f8d7e8; font-family: Arial; padding: 20px; }
+        h1 { color: #c25287; }
+        a { color: #c25287; font-weight: bold; }
+
+  body { background-color: #f8d7e8; font-family: Arial; padding: 20px; }
+  h1 { color: #c25287; }
+  a { color: #c25287; font-weight: bold; }
+  
+   /* NUEVO */
+  .desplegable {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    user-select: none;
+  }
+
+  .flecha {
+    transition: transform 0.3s;
+    font-size: 20px;
+  }
+
+  .girada {
+    transform: rotate(90deg);
+  }
+
+  .contenido {
+    display: none;
+    margin-left: 20px;
+  }
+  video {
+    display: block;
+    margin: 30px auto;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<a href="Index.html">← Regresar</a>
+<h1>Codifica Software</h1>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido1', 'flecha1')">
+  <span class="flecha" id="flecha1">▶</span>
+  1. PROGRAMACION ORINTADA A OBJETOS 
+</h2>
+<div id="contenido1" class="contenido">
+  <p><b>Explicación...</b></p>
+  <p>
+    Módulo o un estilo de programación que proporciona unas guías acerca de cómo trabajar con él
+    y que está basado en el concepto de clases y objetos. En este tipo de programación, se emplea
+    para estructurar un programa de software en piezas simples y reutilizables de planos de código
+    (clases) para crear instancias individuales de objetos.
+    <br><br>
+    La POO permite que el código sea reutilizable, organizado y sencillo de mantener y que sigue el 
+    principio de desarrollo del software empleado por muchos programadores para no duplicar el mismo codigo 
+    y crear programas eficientes asi mismo previenen el acceso no deseado 
+  </p>
+  <i><strong><a href="POO.png">EJEMPLO</a></strong></i>
+</div>
+
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+
+<h2 class="desplegable" onclick="toggleContenido('contenido2', 'flecha2')">
+  <span class="flecha" id="flecha2">▶</span>
+  2. COMO INSTALAR NEATBEANS
+</h2>
+<div id="contenido2" class="contenido">
+  <p><b>Explicación...</b></p>
+  <p> NetBeans es un Entorno de Desarrollo Integrado (IDE) que sirve para programar de manera más fácil y organizada.
+     Se usa principalmente para Java, pero también funciona con otros lenguajes como HTML, CSS, JavaScript y PHP.
+     Con NetBeans puedes escribir código, ejecutarlo, detectar errores, organizar proyectos y crear aplicaciones
+      de forma más cómoda. Es una herramienta muy útil para estudiantes y programadores.
+    <strong>¿PARA QUE SIRVE?</strong>
+    <ol>
+        <li>Desarrollo de aplicaciones Java</li>
+        <li>Desarrollo de aplicaciones web usando HTML, CSS, y JavaScript</li>
+        <li>Soporte para otros lenguajes como PHP, C++, y Python</li>
+        <li>Entorno de desarrollo integrado (IDE) para crear, depurar y ejecutar programas</li>
+        <li>Herramientas de depuración para facilitar la identificación de errores</li>
+        <li>Desarrollo de aplicaciones móviles Android (a través de plugins)</li>
+        <li>Interfaz gráfica fácil de usar y personalizable</li>
+    </ol>
+  </p>
+  
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+ 
+
+
+
+<h2 class="desplegable" onclick="toggleContenido('contenido3', 'flecha3')">
+  <span class="flecha" id="flecha3">▶</span>
+  3. OPERACIONES LOGICAS 
+</h2>
+<div id="contenido3" class="contenido">
+  <p><b>Explicación...</b>
+  </p>
+  AND (Y lógico):
+<ol>
+  <li>La operación AND devuelve verdadero (true) solo si ambas condiciones son verdaderas. Si alguna de las condiciones es
+   falsa, el resultado será falso (false) Ejemplo: Si tienes dos condiciones, como "Está lloviendo" y "Tengo paraguas", 
+   la operación AND será verdadera solo si ambas condiciones son ciertas (es decir, si está lloviendo y tienes un paraguas).</li>
+
+  OR (O lógico):
+
+<li>La operación OR devuelve verdadero (true) si al menos una de las condiciones es verdadera. Solo será falsa (false) 
+  si ambas condiciones son falsas. Ejemplo: Si tienes "Está lloviendo" o "Tengo paraguas", la operación OR será 
+  verdadera si al menos una de las dos condiciones es verdadera (es decir, si está lloviendo o tienes un paraguas).</li>
+
+   NOT (Negación lógica):
+
+<li>La operación NOT invierte el valor lógico de una condición. Si la condición es verdadera (true), la operación NOT 
+  la convierte en falsa (false), y si es falsa (false), la convierte en verdadera (true). Ejemplo: Si la condición es
+   "Está lloviendo", la operación NOT hará que el valor sea falso si la condición es verdadera (es decir, si está lloviendo).</li>
+
+  XOR (O exclusivo lógico):
+
+<li>La operación XOR devuelve verdadero (true) si exactamente una de las dos condiciones es verdadera. Si ambas son verdaderas
+   o ambas son falsas, el resultado será falso (false).Ejemplo: Si tienes "Está lloviendo" y "Tengo paraguas",
+    la operación XOR será verdadera solo si exactamente una de las condiciones es verdadera, es decir, si solo 
+    está lloviendo o solo tienes paraguas, pero no ambas al mismo tiempo</li>
+</ol>
+  <p> 
+   <a href="ope.png">EJEMPLO</a></strong></i>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+ 
+<h2 class="desplegable" onclick="toggleContenido('contenido4', 'flecha4')">
+  <span class="flecha" id="flecha4">▶</span>
+  4. DIAGRAMAS ENTIDAD-RELACION
+</h2>
+
+<div id="contenido4" class="contenido">
+  <p><b>Explicación...</b></p>
+  <p>
+    Una Entidad-Relación (ER) es un modelo de datos que se utiliza para representar la estructura de una base
+     de datos de forma gráfica y conceptual. Fue propuesto por Peter Chen en 1976 y es ampliamente utilizado 
+     para diseñar bases de datos relacionales.
+     Qué es una Entidad-Relación?
+     En el contexto de bases de datos, un diagrama entidad-relación (ER) es una representación visual que 
+      cómo las entidades están relacionadas entre sí dentro de un sistema. En otras palabras, describe las entidades
+       (objetos, conceptos o cosas) y las relaciones entre ellas.
+       Componentes Principales de un Diagrama ER:
+       <ol>ENTIDAD</ol>
+       <li> entidad es cualquier objeto o cosa que tiene una existencia independiente y puede ser descrita
+         de manera única dentro del sistema. En el contexto de bases de datos, las entidades suelen corresponder a tablas.
+         Ejemplos de entidades: Estudiantes, Empleados, Productos, Clientes.
+         En un diagrama ER, las entidades se representan como rectángulos.
+       </li>
+
+       <ol>ATRIBUTO</ol>
+       <li>Un atributo es una propiedad o característica de una entidad. Los atributos 
+        las propiedades o detalles de las entidades. Ejemplos de atributos de la entidad Estudiante podrían 
+        ser Nombre, Edad, Dirección.En un diagrama ER, los atributos se representan como elipses conectadas a las entidades.</li>
+
+        <ol>RELACION</ol>
+        <li>Una relación describe cómo dos o más entidades están asociadas entre sí. Por ejemplo, un Estudiante puede 
+          matricularse en un Curso, y esa sería una relación entre las entidades Estudiante y Curso.un diagrama ER, 
+          las relaciones se representan como rombos conectados a las entidades.</li>
+      </p>
+  
+</div>
+
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido5', 'flecha5')">
+  <span class="flecha" id="flecha5">▶</span>
+  5. ETIQUETAS EN JAVA 
+</h2>
+
+<div id="contenido5" class="contenido">
+  <p><b>Explicación...</b></p>
+  <p> <ul>
+  <li><b>JFrame:</b> 
+    Es la ventana principal de la aplicación.
+     Aquí se muestran todos los componentes gráficos. Puede tener título, tamaño, íconos y configuraciones 
+     como cerrar la aplicación.</li>
+
+  <li><b>JPanel:</b>
+     Es un contenedor que sirve para organizar y agrupar componentes dentro del JFrame.
+      Permite usar diferentes tipos de diseño (Layouts) para ordenar los elementos.</li>
+
+  <li><b>JLabel:</b> 
+    Se utiliza para mostrar texto o imágenes en pantalla. No permite edición del usuario, 
+    solo sirve para informar o etiquetar otros componentes, como campos de texto.</li>
+
+  <li><b>JTextField:</b>
+     Campo de texto de una sola línea donde el usuario puede escribir información como nombres,
+      números o datos cortos.</li>
+
+  <li><b>JTextArea:</b> Área de texto de varias líneas. Se usa para escribir textos largos como comentarios,
+     descripciones o mensajes.</li>
+
+  <li><b>JButton:</b>
+     Botón que el usuario puede presionar para ejecutar una acción, como guardar, 
+     enviar información o abrir otra ventana.</li>
+
+  <li><b>JCheckBox:</b>
+     Casilla de verificación que permite seleccionar o deseleccionar opciones múltiples.
+      Se usa cuando el usuario puede elegir varias respuestas.</li>
+
+  <li><b>JRadioButton:</b> 
+    Botón de opción que permite seleccionar solo una alternativa entre varias disponibles.
+     Normalmente se agrupa con ButtonGroup.</li>
+
+  <li><b>ButtonGroup:</b>
+     Se utiliza para agrupar varios JRadioButton y permitir que solo uno pueda ser seleccionado a la vez.</li>
+
+  <li><b>JComboBox:</b>
+     Lista desplegable que muestra opciones para seleccionar una sola.
+      Ahorra espacio y organiza mejor la información.</li>
+
+  <li><b>JTable:</b> 
+    Tabla que permite mostrar y organizar datos en filas y columnas,
+     como registros de bases de datos o listas de información.</li>
+
+  <li><b>JList:</b> 
+    Lista que muestra varios elementos y permite seleccionar uno o varios dependiendo de su configuración.</li>
+
+  <li><b>JScrollPane:</b>
+     Proporciona barras de desplazamiento vertical u horizontal.
+      Se usa junto con JTextArea, JTable o listas largas para facilitar la visualización.</li>
+
+  <li><b>JMenuBar:</b>
+     Barra de menú que aparece en la parte superior de la ventana, similar a “Archivo”, “Editar”, etc.,
+      en los programas.</li>
+
+  <li><b>JMenu:</b>
+     Cada sección dentro de la barra de menú. Por ejemplo “Archivo” o “Configuración”. 
+     Contiene varias opciones.</li>
+
+  <li><b>JMenuItem:</b> Cada opción dentro de un menú.
+     Al seleccionarla, ejecuta una acción específica.</li>
+
+  <li><b>JPasswordField:</b> 
+    Campo de texto especial que oculta los caracteres mientras el usuario escribe, ideal para contraseñas.</li>
+
+  <li><b>JSlider:</b>
+     Control deslizante que permite seleccionar un valor moviendo una barra, útil para volumen, brillo o niveles.</li>
+
+  <li><b>JProgressBar:</b> 
+    Barra que representa visualmente el progreso de una tarea, como descargas, cargas o procesos.</li>
+
+  <li><b>Layouts:</b> Sistemas que organizan los componentes en la ventana:
+      <ul>
+        <li><b>FlowLayout:</b> Ordena componentes en fila.</li>
+        <li><b>BorderLayout:</b> Divide la ventana en Norte, Sur, Este, Oeste y Centro.</li>
+        <li><b>GridLayout:</b> Organiza en forma de tabla.</li>
+      </ul>
+  </li>
+</ul>
+</p>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2>Cuestionario – Codifica Software</h2>
+
+
+<form id="quiz">
+
+    <h3>1. La POO se basa principalmente en..</h3>
+    <label><input type="radio" name="p1" value="a"> Objetos, clases, herencia y encapsulamiento</label><br>
+    <label><input type="radio" name="p1" value="b"> Variables globales</label><br>
+    <label><input type="radio" name="p1" value="c"> Funciones sin clases</label><br>
+
+    <h3>2. Para instalar NetBeans correctamente, es necesario:</h3>
+    <label><input type="radio" name="p2" value="a"> Solo descargar cualquier archivo sin java</label><br>
+    <label><input type="radio" name="p2" value="b"> Tener instalado Java JDK y luego descargar NetBeans desde su 
+      página oficia</label><br>
+    <label><input type="radio" name="p2" value="c"> Solo copiarlo en una USB</label><br>
+
+    <h3>3. ¿Cual de las siguientes es una operacio logica?</h3>
+    <label><input type="radio" name="p3" value="a"> +</label><br>
+    <label><input type="radio" name="p3" value="b"> &&(AND)</label><br>
+    <label><input type="radio" name="p3" value="c"> = </label><br>
+
+    <h3>4. En un diagrama ER, una entidad representa:</h3>
+    <label><input type="radio" name="p4" value="a"> Un boton de la Interfaz</label><br>
+    <label><input type="radio" name="p4" value="b"> Un usuario u objeto del mundo real del que se almacenan datos</label><br>
+    <label><input type="radio" name="p4" value="c"> Una carpeta del sistema</label><br>
+
+    <h3>5. ¿Para qué sirve un JLabel en Java Swing?</h3>
+    <label><input type="radio" name="p5" value="a"> Para cerrar la ventana</label><br>
+    <label><input type="radio" name="p5" value="b"> Para mostrar texto o imágenes en la interfaz</label><br>
+    <label><input type="radio" name="p5" value="c">Para conectarse a internet</label><br>
+
+    <br>
+    <button type="button" onclick="calificar()">Calificar</button>
+</form>
+
+<p id="resultado" style="font-size:20px; font-weight:bold; margin-top:20px;"></p>
+
+<script>
+function calificar() {
+    let correctas = {
+        p1: "a",
+        p2: "b",
+        p3: "b",
+        p4: "b",
+        p5: "b"
+    };
+
+    let puntos = 0;
+    let total = Object.keys(correctas).length;
+
+    for (let p in correctas) {
+        let seleccionada = document.querySelector('input[name="'+p+'"]:checked');
+        if (seleccionada && seleccionada.value === correctas[p]) {
+            puntos++;
+        }
+    }
+
+    document.getElementById("resultado").innerText =
+        "Obtuviste " + puntos + " de " + total + " respuestas correctas.";
+        document.getElementById("quiz").reset();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lengua y Comunicación</title>
+
+    <style>
+        body { background-color: #f8d7e8; font-family: Arial; padding: 20px; }
+        h1 { color: #c25287; }
+        a { color: #c25287; font-weight: bold; }
+
+         /* NUEVO */
+  .desplegable {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    user-select: none;
+  }
+
+  .flecha {
+    transition: transform 0.3s;
+    font-size: 20px;
+  }
+
+  .girada {
+    transform: rotate(90deg);
+  }
+
+  .contenido {
+    display: none;
+    margin-left: 20px;
+  }
+  video {
+    display: block;
+    margin: 30px auto;
+}
+
+
+    </style>
+</head>
+<body>
+
+<a href="Index.html">← Regresar</a>
+<h1>Lengua y Comunicación</h1>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido1', 'flecha1')">
+  <span class="flecha" id="flecha1">▶</span>
+  1. COMPRENCION LECTORA 
+</h2>
+<div id="contenido1" class="contenido">
+    <P><b>Explicación...</b></P>
+    <p>
+        La comprensión lectora es la capacidad de entender, analizar e interpretar
+        un texto. No solo consiste en leer palabras, sino en comprender el mensaje,
+        identificar ideas principales y reflexionar sobre la información.
+    </p>
+
+    <p>
+        Esta habilidad es muy importante porque permite mejorar el aprendizaje en
+        todas las materias, facilita la comunicación y desarrolla el pensamiento
+        crítico.
+    </p>
+
+    <h3>Importancia</h3>
+    <ul>
+        <li>Ayuda a comprender textos y actividades escolares.</li>
+        <li>Mejora el rendimiento académico.</li>
+        <li>Desarrolla la capacidad de análisis.</li>
+        <li>Fortalece la lectura y la escritura.</li>
+    </ul>
+
+    <h3>Niveles de la comprensión lectora</h3>
+    <p>
+        <strong>Comprensión literal:</strong> entiende la información que el texto
+        presenta de manera directa.
+    </p>
+    <p>
+        <strong>Comprensión inferencial:</strong> interpreta información que no está
+        escrita explícitamente.
+    </p>
+    <p>
+        <strong>Comprensión crítica:</strong> permite opinar y evaluar el contenido
+        del texto.
+    </p>
+    <a href="https://www.smartick.es/blog/lectura/comprension-lectora/" target="_blank">Más 
+        información sobre la comprensión lectora</a>
+</div>
+    <script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido2', 'flecha2')">
+  <span class="flecha" id="flecha2">▶</span>
+  2. TIPOS DE TEXTOS 
+</h2>
+<div id="contenido2" class="contenido">
+    <P><b>Explicación...</b></P>
+    <P><section class="materia">
+    <p>Los tipos de textos son las distintas formas en las que se organiza la información escrita según 
+        la intención del autor y la manera en que se comunica el mensaje. Cada tipo de texto tiene características
+         propias y cumple una función específica, como narrar, describir, informar, argumentar o dar instrucciones.
+
+Los tipos de textos permiten comunicar ideas, hechos, opiniones o indicaciones
+ de manera clara y adecuada según la situación y el propósito del texto</p>
+    <h2>📝 Tipos de Textos</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:center; border-collapse: collapse;">
+        <tr style="background-color:#f8bbd0;">
+            <th>Tipo de texto</th>
+            <th>Características</th>
+            <th>Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td>Narrativo</td>
+            <td>Relata hechos reales o ficticios, tiene personajes, tiempo y espacio.</td>
+            <td>Cuentos, novelas, leyendas</td>
+        </tr>
+
+        <tr>
+            <td>Descriptivo</td>
+            <td>Describe personas, lugares, objetos o situaciones.</td>
+            <td>Retratos, descripciones de lugares</td>
+        </tr>
+
+        <tr>
+            <td>Expositivo</td>
+            <td>Explica o informa sobre un tema de forma clara y objetiva.</td>
+            <td>Artículos, enciclopedias</td>
+        </tr>
+
+        <tr>
+            <td>Argumentativo</td>
+            <td>Defiende una opinión usando argumentos.</td>
+            <td>Ensayos, artículos de opinión</td>
+        </tr>
+
+        <tr>
+            <td>Instructivo</td>
+            <td>Da indicaciones o pasos a seguir.</td>
+            <td>Recetas, manuales</td>
+        </tr>
+    </table>
+</section>
+</P>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido3', 'flecha3')">
+  <span class="flecha" id="flecha3">▶</span>
+  3. ENSAYO
+</h2>
+<div id="contenido3" class="contenido">
+    <P><section class="materia">
+    <details>
+        <summary>✍️ ¿Qué es un ensayo?</summary>
+
+        <p>
+            Un <strong>ensayo</strong> es un texto escrito en el que el autor expresa
+            sus ideas, opiniones o reflexiones sobre un tema específico, apoyándose
+            en argumentos.
+        </p>
+
+        <h3>Características del ensayo</h3>
+        <ul>
+            <li>Expresa una opinión personal.</li>
+            <li>Utiliza argumentos claros.</li>
+            <li>Tiene introducción, desarrollo y conclusión.</li>
+            <li>Emplea un lenguaje formal.</li>
+        </ul>
+
+        <h3>Ejemplo de tema</h3>
+        <p>
+            👉 <em>La importancia de la comprensión lectora en los estudiantes.</em>
+        </p>
+    </details>
+</section>
+</P>
+<section class="materia">
+    <h2>🧩 Partes de un Ensayo</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:center; border-collapse: collapse;">
+        <tr style="background-color:#f8bbd0;">
+            <th>Parte</th>
+            <th>¿Qué contiene?</th>
+            <th>Función</th>
+        </tr>
+
+        <tr>
+            <td><strong>Introducción</strong></td>
+            <td>Presenta el tema y la idea principal del ensayo.</td>
+            <td>Llamar la atención del lector y explicar de qué tratará el texto.</td>
+        </tr>
+
+        <tr>
+            <td><strong>Desarrollo</strong></td>
+            <td>Expone argumentos, ideas y ejemplos.</td>
+            <td>Sustentar la opinión del autor.</td>
+        </tr>
+
+        <tr>
+            <td><strong>Conclusión</strong></td>
+            <td>Resume las ideas principales y da una opinión final.</td>
+            <td>Cerrar el tema y reforzar el punto de vista.</td>
+        </tr>
+    </table>
+</section>
+<video src="" controls style="width: 40%; border-radius: 30px;"></video>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido4', 'flecha4')">
+  <span class="flecha" id="flecha4">▶</span>
+  4. REDACCION DE TEXTOS FORMALES
+</h2>
+<div id="contenido4" class="contenido">
+    <p><section class="materia">
+    <h2>📝 Redacción de Textos Formales</h2>
+
+    <p>
+        La <strong>redacción de textos formales</strong> es la forma de escribir que se
+        utiliza en contextos académicos, escolares o profesionales. Se caracteriza
+        por emplear un lenguaje claro, correcto y respetuoso, evitando expresiones
+        coloquiales o informales.
+    </p>
+
+    <p>
+        Este tipo de redacción busca comunicar ideas de manera ordenada, objetiva
+        y precisa, siguiendo reglas de ortografía, gramática y coherencia.
+    </p>
+
+    <h3>Características de los textos formales</h3>
+    <ul>
+        <li>Lenguaje claro y respetuoso.</li>
+        <li>Buena ortografía y puntuación.</li>
+        <li>Ideas ordenadas y coherentes.</li>
+        <li>Uso de conectores.</li>
+        <li>Tono serio y objetivo.</li>
+    </ul>
+
+    <h3>📄 Ejemplo de texto formal</h3>
+
+    <div style="border: 2px solid #e75480; padding: 15px; border-radius: 10px; background-color: #fff;">
+        <p>
+            <strong>La importancia de la lectura</strong>
+        </p>
+
+        <p>
+            La lectura es una actividad fundamental para el desarrollo académico
+            y personal de los estudiantes. A través de ella, se adquieren nuevos
+            conocimientos, se fortalece la comprensión lectora y se amplía el
+            vocabulario.
+        </p>
+
+        <p>
+            En conclusión, fomentar el hábito de la lectura contribuye al
+            crecimiento intelectual y mejora el desempeño escolar.
+        </p>
+        <a href="https://aula2.educa.aragon.es/datos/espad/Lengua/bloque4/Unidad02/pagina_1.html" target="_blank">Más 
+        información sobre textos formales</a>
+    </div>
+</section>
+</p>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido5', 'flecha5')">
+  <span class="flecha" id="flecha5">▶</span>
+  5. CONECTORES
+</h2>
+<div id="contenido5" class="contenido">
+<P><b>Explicacion...</b></P>
+<p><section class="materia">
+    <h2>🔗 Conectores</h2>
+
+    <p>
+        Los <strong>conectores</strong> son palabras o expresiones que sirven para
+        <strong>unir ideas, oraciones o párrafos</strong> dentro de un texto, dando
+        orden, coherencia y claridad a la información.
+    </p>
+
+    <p>
+        Su función principal es indicar la relación que existe entre las ideas,
+        como causa, consecuencia, comparació
+</p>
+<section class="materia">
+    <h2>🔗 Cuadro de Conectores</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:center; border-collapse: collapse;">
+        <tr style="background-color:#f8bbd0;">
+            <th>Tipo de conector</th>
+            <th>Función</th>
+            <th>Ejemplos</th>
+        </tr>
+
+        <tr>
+            <td><strong>Aditivos</strong></td>
+            <td>Añaden información.</td>
+            <td>y, además, también, incluso</td>
+        </tr>
+
+        <tr>
+            <td><strong>Causa</strong></td>
+            <td>Indican el motivo de una acción.</td>
+            <td>porque, ya que, debido a</td>
+        </tr>
+
+        <tr>
+            <td><strong>Consecuencia</strong></td>
+            <td>Expresan el resultado de una acción.</td>
+            <td>por lo tanto, así que, en consecuencia</td>
+        </tr>
+
+        <tr>
+            <td><strong>Contraste</strong></td>
+            <td>Oponen o comparan ideas.</td>
+            <td>pero, sin embargo, aunque</td>
+        </tr>
+
+        <tr>
+            <td><strong>Orden</strong></td>
+            <td>Organizan las ideas.</td>
+            <td>primero, luego, finalmente</td>
+        </tr>
+
+        <tr>
+            <td><strong>Conclusión</strong></td>
+            <td>Cierran o resumen un texto.</td>
+            <td>en conclusión, para finalizar</td>
+        </tr>
+    </table>
+</section>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+<h2>Cuestionario – Lengua y Comunicación</h2>
+
+<form id="quiz">
+
+<h3>1. ¿Cuál es el objetivo principal de la comprensión lectora?</h3>
+<label><input type="radio" name="p1" value="a"> Memorizar el texto palabra por palabra</label><br>
+<label><input type="radio" name="p1" value="b"> Entender y captar el sentido del texto</label><br>
+<label><input type="radio" name="p1" value="c"> Copiar el texto en otro papel</label><br>
+
+<h3>2. ¿Cuál de los siguientes es un texto narrativo?</h3>
+<label><input type="radio" name="p2" value="a"> Una receta de cocina</label><br>
+<label><input type="radio" name="p2" value="b"> Un cuento</label><br>
+<label><input type="radio" name="p2" value="c"> Un manual de instrucciones</label><br>
+
+<h3>3. Hacer inferencias significa:</h3>
+<label><input type="radio" name="p3" value="a"> Leer solo el título del texto</label><br>
+<label><input type="radio" name="p3" value="b"> Sacar conclusiones basadas en la información del texto</label><br>
+<label><input type="radio" name="p3" value="c"> Copiar frases textuales sin analizarlas</label><br>
+
+<h3>4. ¿Qué caracteriza a un texto formal?</h3>
+<label><input type="radio" name="p4" value="a"> Uso de lenguaje coloquial y chistes</label><br>
+<label><input type="radio" name="p4" value="b"> Uso correcto del lenguaje y estructura organizada</label><br>
+<label><input type="radio" name="p4" value="c"> Texto breve y con dibujos</label><br>
+
+<h3>5. ¿Cuál de estos conectores indica causa?</h3>
+<label><input type="radio" name="p5" value="a"> Por lo tanto</label><br>
+<label><input type="radio" name="p5" value="b"> Porque</label><br>
+<label><input type="radio" name="p5" value="c"> Además</label><br>
+
+<br>
+<button type="button" onclick="calificar()">Calificar</button>
+
+<p id="resultado"></p>
+</form>
+
+
+<p id="resultado" style="font-size:20px; font-weight:bold; margin-top:20px;"></p>
+
+<script>
+function calificar() {
+    let respuestasCorrectas = {
+        p1: "b",
+        p2: "b",
+        p3: "b",
+        p4: "b",
+        p5: "b"
+    };
+
+    let puntos = 0;
+
+    for (let pregunta in respuestasCorrectas) {
+        let opciones = document.getElementsByName(pregunta);
+        for (let opcion of opciones) {
+            if (opcion.checked && opcion.value === respuestasCorrectas[pregunta]) {
+                puntos++;
+            }
+        }
+    }
+
+    document.getElementById("resultado").innerHTML =
+        "Obtuviste <strong>" + puntos + " de 5</strong> respuestas correctas.";
+        document.getElementById("quiz").reset();
+}
+</script>
+
+
+</body>
+</html>

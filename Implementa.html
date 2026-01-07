@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Implementa Software</title>
+
+    <style>
+        body { background-color: #f8d7e8; font-family: Arial; padding: 20px; }
+        h1 { color: #c25287; }
+        a { color: #c25287; font-weight: bold; }
+
+        
+        /* NUEVO */
+  .desplegable {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    user-select: none;
+  }
+
+  .flecha {
+    transition: transform 0.3s;
+    font-size: 20px;
+  }
+
+  .girada {
+    transform: rotate(90deg);
+  }
+
+  .contenido {
+    display: none;
+    margin-left: 20px;
+  }
+    </style>
+</head>
+<body>
+
+<a href="Index.html">← Regresar</a>
+<h1>Implementa Software</h1>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido1', 'flecha1')">
+  <span class="flecha" id="flecha1">▶</span>
+  1. DIAGRAMAS DE FLUJO
+</h2>
+<div id="contenido1" class="contenido">
+<p><b>Explicacion....</b></p>
+<p><h2>¿Qué es un Diagrama de Flujo?</h2>
+<p>
+Un diagrama de flujo es una representación gráfica de un proceso o algoritmo. 
+Se utiliza para mostrar la secuencia de pasos que se deben seguir para realizar 
+una tarea, solucionar un problema o ejecutar un programa. Facilita la comprensión, 
+análisis y diseño de procesos.
+</p>
+
+<h2>¿Para qué sirven los Diagramas de Flujo?</h2>
+<ul>
+  <li>Para explicar procesos de forma clara y visual.</li>
+  <li>Para planificar programas antes de escribir código.</li>
+  <li>Para identificar errores o pasos innecesarios.</li>
+  <li>Para documentar procedimientos en empresas y escuelas.</li>
+</ul>
+
+<h2>Características de un Diagrama de Flujo</h2>
+<ul>
+  <li>Se lee de arriba hacia abajo y de izquierda a derecha.</li>
+  <li>Usa símbolos específicos para cada tipo de acción.</li>
+  <li>Debe ser claro, ordenado y fácil de entender.</li>
+  <li>Debe mostrar el inicio y el final del proceso.</li>
+</ul>
+
+<h2>Símbolos Principales de los Diagramas de Flujo</h2>
+<ul>
+  <li><b>Óvalo (Inicio / Fin):</b> Indica el comienzo o término del proceso.</li>
+  <li><b>Rectángulo (Proceso):</b> Representa una acción o instrucción.</li>
+  <li><b>Rombo (Decisión):</b> Se utiliza para preguntas con respuesta Sí / No.</li>
+  <li><b>Paralelogramo (Entrada / Salida):</b> Representa datos que se ingresan o muestran.</li>
+  <li><b>Flechas:</b> Indican la dirección del flujo del proceso.</li>
+</ul>
+
+<h2>Ventajas de los Diagramas de Flujo</h2>
+<ul>
+  <li>Facilitan la comprensión de procesos complejos.</li>
+  <li>Ayudan a detectar errores rápidamente.</li>
+  <li>Mejoran la comunicación entre programadores y usuarios.</li>
+  <li>Sirven como documentación del sistema.</li>
+</ul>
+
+<h2>Ejemplo Explicado</h2>
+<p><b>Ejemplo:</b> Diagrama de flujo para sumar dos números.</p>
+<ul>
+  <li>Inicio</li>
+  <li>Ingresar número 1</li>
+  <li>Ingresar número 2</li>
+  <li>Sumar ambos números</li>
+  <li>Mostrar resultado</li>
+  <li>Fin</li>
+</ul>
+<p>
+Este ejemplo muestra cómo se representa un procedimiento simple usando pasos ordenados
+y símbolos que facilitan entender la lógica del proceso.
+</p>
+<h2>📊 ¿Qué son los Diagramas de Flujo?</h2>
+
+<iframe 
+    width="40%" 
+    height="250"
+    src="https://www.youtube.com/embed/hTz4YzvtjrM"
+    style="border-radius:30px;"
+    allowfullscreen>
+</iframe>
+
+
+
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+<h2 class="desplegable" onclick="toggleContenido('contenido2', 'flecha2')">
+  <span class="flecha" id="flecha2">▶</span>
+  2. PUNTO DE VENTA
+  </h2>
+<div id="contenido2" class="contenido">
+<p><b>Explicación...</b></p>
+<h2>¿Qué es un Punto de Venta ?</h2>
+<p>
+Un Punto de Venta, también conocido como POS (Point of Sale), es el sistema que se utiliza 
+para registrar y controlar las ventas realizadas en un negocio. 
+Permite cobrar al cliente, generar tickets o facturas, registrar productos vendidos, controlar inventarios 
+y administrar las operaciones comerciales de manera rápida y segura.
+</p>
+
+<h2>¿Para qué sirve un Punto de Venta?</h2>
+<ul>
+  <li>Registrar cada venta realizada.</li>
+  <li>Controlar el inventario de productos.</li>
+  <li>Emitir tickets o facturas.</li>
+  <li>Gestionar formas de pago como efectivo, tarjeta o transferencia.</li>
+  <li>Registrar información de clientes y vendedores.</li>
+  <li>Llevar reportes y estadísticas de ventas.</li>
+</ul>
+
+<h2>Componentes de un Punto de Venta</h2>
+<ul>
+  <li><b>Software POS:</b> Programa donde se gestionan las ventas.</li>
+  <li><b>Caja registradora:</b> Registra el dinero y operaciones.</li>
+  <li><b>Lector de código de barras:</b> Facilita el registro de productos.</li>
+  <li><b>Impresora de tickets:</b> Genera comprobantes de compra.</li>
+  <li><b>Pantalla o monitor:</b> Muestra la información al vendedor.</li>
+  <li><b>Terminal de pago:</b> Para cobros con tarjeta.</li>
+</ul>
+
+<h2>Tipos de Punto de Venta</h2>
+<ul>
+  <li><b>Punto de Venta Tradicional:</b> Instalado físicamente en una computadora.</li>
+  <li><b>Punto de Venta en la Nube:</b> Funciona con internet y permite acceso desde cualquier lugar.</li>
+  <li><b>Punto de Venta Móvil:</b> Utilizado en tablets o celulares.</li>
+</ul>
+
+<h2>Beneficios de utilizar un Punto de Venta</h2>
+<ul>
+  <li>Agiliza el proceso de venta.</li>
+  <li>Reduce errores humanos.</li>
+  <li>Mejora la atención al cliente.</li>
+  <li>Facilita el control del negocio.</li>
+  <li>Permite tomar mejores decisiones mediante reportes.</li>
+</ul>
+
+<h2>Conclusión</h2>
+<p>
+Un Punto de Venta es una herramienta esencial para cualquier negocio, ya que permite 
+organizar las ventas, controlar el inventario y administrar las operaciones comerciales 
+de manera eficiente, segura y profesional.
+</p>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido3', 'flecha3')">
+  <span class="flecha" id="flecha3">▶</span>
+  3. CONCEPTOS SQL
+  </h2>
+<div id="contenido3" class="contenido">
+<p><b>Explicación...</b></p>
+<p><b>SQL (Structured Query Language)</b> es el lenguaje estándar que se utiliza para trabajar con 
+    bases de datos relacionales. Permite consultar, agregar, modificar y eliminar información de manera organizada.</p>
+
+<p><b>Conceptos básicos de SQL:</b></p>
+<ul>
+    <li><b>Base de datos:</b> conjunto organizado de información almacenada.</li>
+    <li><b>Tabla:</b> estructura donde se guardan los datos en filas y columnas.</li>
+    <li><b>Registro:</b> cada fila de una tabla, representa un dato completo.</li>
+    <li><b>Campo:</b> cada columna de la tabla, define el tipo de información.</li>
+    <li><b>Llave primaria (Primary Key):</b> campo que identifica de forma única cada registro.</li>
+    <li><b>Llave foránea (Foreign Key):</b> campo que permite relacionar tablas entre sí.</li>
+</ul>
+
+<p><b>Comandos principales de SQL:</b></p>
+<ul>
+    <li><b>SELECT:</b> consulta información.</li>
+    <li><b>INSERT:</b> agrega nuevos datos.</li>
+    <li><b>UPDATE:</b> modifica datos existentes.</li>
+    <li><b>DELETE:</b> elimina registros.</li>
+    <li><b>CREATE:</b> crea bases de datos o tablas.</li>
+    <li><b>DROP:</b> elimina bases de datos o tablas.</li>
+</ul>
+
+<p><b>¿Para qué sirve SQL?</b> Se usa para administrar información en sistemas como ventas, 
+    inventarios, usuarios, aplicaciones web, sistemas empresariales y generación de reportes,
+     permitiendo un manejo seguro y organizado de los datos.</p>
+     <h2>🗄️ Conceptos básicos de SQL</h2>
+
+<iframe 
+    width="40%" 
+    height="250"
+    src="https://www.youtube.com/embed/7S_tz1z_5bA"
+    style="border-radius:30px;"
+    allowfullscreen>
+</iframe>
+
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido4', 'flecha4')">
+  <span class="flecha" id="flecha4">▶</span>
+  4. SINTAXIS PARA CREAR TABLA 
+  </h2>
+  <div id="contenido4" class="contenido">
+<p><b>Explicacion....</b></p>
+<p><p><b>Sintaxis para crear una tabla en SQL</b></p>
+<p>Para crear una tabla en SQL se utiliza el comando <b>CREATE TABLE</b>. Dentro de este comando se definen los nombres de las columnas, sus tipos de datos y las restricciones.</p>
+
+<p><b>Estructura básica:</b></p>
+<pre><code>CREATE TABLE nombre_tabla (
+    nombre_columna tipo_dato restricciones,
+    nombre_columna tipo_dato restricciones
+);
+</code></pre>
+
+<p><b>Principales elementos:</b></p>
+<ul>
+    <li><b>CREATE TABLE:</b> indica que se va a crear una nueva tabla.</li>
+    <li><b>nombre_tabla:</b> es el nombre que le daremos a la tabla.</li>
+    <li><b>nombre_columna:</b> nombre de cada campo que tendrá la tabla.</li>
+    <li><b>tipo_dato:</b> define el tipo de información (texto, número, fecha, etc.).</li>
+    <li><b>restricciones:</b> reglas como NOT NULL, PRIMARY KEY o UNIQUE.</li>
+</ul>
+
+<p><b>Ejemplo de creación de tabla:</b></p>
+<pre><code>CREATE TABLE Clientes (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    correo VARCHAR(100),
+    edad INT
+);
+</code></pre>
+
+<p>En este ejemplo se crea una tabla llamada "Clientes" con cuatro columnas: 
+id (clave primaria), nombre (texto obligatorio), correo y edad.</p>
+</p>
+
+<h2>🗄️ Sintaxis para crear una tabla en SQL</h2>
+
+<iframe 
+    width="40%" 
+    height="250"
+    src="https://www.youtube.com/embed/_S6CITm-h6w"
+    style="border-radius:30px;"
+    allowfullscreen>
+</iframe>
+
+
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+
+<h2 class="desplegable" onclick="toggleContenido('contenido5', 'flecha5')">
+  <span class="flecha" id="flecha5">▶</span>
+  5. DIAGRAMA DE CASOS DE USO
+  </h2>
+  <div id="contenido5" class="contenido">
+<p><b>Explicacion....</b></p>
+<p><b>¿Qué es un Diagrama de Caso de Uso?</b></p>
+<p>Un diagrama de caso de uso es una herramienta utilizada en el análisis y diseño de sistemas que permite 
+    representar las funcionalidades que ofrece un sistema desde el punto de vista del usuario. 
+    Muestra qué puede hacer el usuario dentro del sistema y cómo interactúa con él.</p>
+
+<p><b>¿Para qué sirve un diagrama de caso de uso?</b></p>
+<ul>
+    <li>Ayuda a entender qué hará el sistema antes de construirlo.</li>
+    <li>Permite identificar las necesidades de los usuarios.</li>
+    <li>Facilita la comunicación entre desarrolladores y clientes.</li>
+    <li>Sirve como punto de partida para el diseño del software.</li>
+</ul>
+
+<p><b>Elementos principales del diagrama:</b></p>
+<ul>
+    <li><b>Actor:</b> Representa a las personas, sistemas o dispositivos que interactúan con el sistema.</li>
+    <li><b>Caso de uso:</b> Es una función o acción que el usuario puede realizar, como "Iniciar sesión" o "Registrar compra".</li>
+    <li><b>Sistema:</b> Es el área donde se encuentran los casos de uso, indicando que pertenecen al software.</li>
+    <li><b>Relaciones:</b> Son las líneas que conectan actores con casos de uso.</li>
+</ul>
+
+<p><b>Ejemplo sencillo:</b></p>
+<p>En un sistema de ventas, los actores pueden ser “Cliente” y “Administrador”. Algunos casos de uso serían “Realizar compra”, “Consultar productos” y “Gestionar inventario”.</p>
+
+<p>Gracias a los diagramas de caso de uso es más fácil comprender qué hará el sistema y cómo será utilizado.</p>
+</p>
+<h2>👤 Diagrama de Caso de Uso</h2>
+
+<h2>👤 Diagrama de Caso de Uso (UML)</h2>
+
+<iframe 
+    width="40%" 
+    height="250"
+    src="https://www.youtube.com/embed/cV-lDILaMJ8"
+    style="border-radius:30px;"
+    allowfullscreen>
+</iframe>
+
+
+  </div>
+
+  <script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2>Cuestionario – Implementa Software</h2>
+
+<form id="quiz">
+
+    <h3>1. ¿Para que sirve un diagrama de flujo?</h3>
+    <label><input type="radio" name="p1" value="a"> Para representar gráficamente procesos paso a paso</label><br>
+    <label><input type="radio" name="p1" value="b">Para diseñar páginas web</label><br>
+    <label><input type="radio" name="p1" value="c">Para almacenar datos en una base de datos</label><br>
+
+    <h3>2. ¿Que es un punto de venta ?</h3>
+    <label><input type="radio" name="p2" value="a"> Una oficina de trabajo</label><br>
+    <label><input type="radio" name="p2" value="b"> Un sistema que permite registrar ventas, controlar inventario y gestionar clientes</label><br>
+    <label><input type="radio" name="p2" value="c"> Un sistema operativo de celulares</label><br>
+
+    <h3>3. ¿que es SQL?</h3>
+    <label><input type="radio" name="p3" value="a"> Un lenguaje para manejar bases de datos</label><br>
+    <label><input type="radio" name="p3" value="b">Un lenguaje para crear videojuegos</label><br>
+    <label><input type="radio" name="p3" value="c"> Escribir el manual del usuario</label><br>
+
+    <h3>4. ¿Qué comando se utiliza para crear una tabla en SQL?</h3>
+    <label><input type="radio" name="p4" value="a"> CREATE TABLE</label><br>
+    <label><input type="radio" name="p4" value="b"> CREATE DATABASE </label><br>
+    <label><input type="radio" name="p4" value="c"> DELATE</label><br>
+
+    <h3>5. ¿Qué representa un actor en un diagrama de caso de uso?</h3>
+    <label><input type="radio" name="p5" value="a"> Un usuario o entidad que interactúa con el sistema</label><br>
+    <label><input type="radio" name="p5" value="b">Un tipo de diagrama</label><br>
+    <label><input type="radio" name="p5" value="c"> Una parte del hardware del sistema</label><br>
+
+    <br>
+    <button type="button" onclick="calificar()">Calificar</button>
+</form>
+
+<p id="resultado" style="font-size:20px; font-weight:bold; margin-top:20px;"></p>
+
+<script>
+function calificar() {
+    let correctas = {
+        p1: "a",
+        p2: "b",
+        p3: "a",
+        p4: "a",
+        p5: "a"
+    };
+
+    let puntos = 0;
+    let total = Object.keys(correctas).length;
+
+    for (let p in correctas) {
+        let seleccionada = document.querySelector('input[name="'+p+'"]:checked');
+        if (seleccionada && seleccionada.value === correctas[p]) {
+            puntos++;
+        }
+    }
+
+    document.getElementById("resultado").innerText =
+        "Obtuviste " + puntos + " de " + total + " respuestas correctas.";
+        document.getElementById("quiz").reset();
+}
+</script>
+
+</body>
+</html>

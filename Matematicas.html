@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Matemáticas</title>
+
+    <style>
+        body { background-color: #f8d7e8; font-family: Arial; padding: 20px; }
+        h1 { color: #c25287; }
+        a { color: #c25287; font-weight: bold; }
+
+    .desplegable {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    user-select: none;
+  }
+
+  .flecha {
+    transition: transform 0.3s;
+    font-size: 20px;
+  }
+
+  .girada {
+    transform: rotate(90deg);
+  }
+
+  .contenido {
+    display: none;
+    margin-left: 20px;
+  }
+    </style>
+</head>
+<body>
+
+<a href="Index.html">← Regresar</a>
+<h1>Matemáticas</h1>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido1', 'flecha1')">
+  <span class="flecha" id="flecha1">▶</span>
+  1. LENGUAJE MATEMATICO
+</h2>
+
+<div id="contenido1" class="contenido">
+<p><b>Explicacion...</b></p>
+<p><b>Lenguaje Matemático</b></p>
+<p>El lenguaje matemático es la forma en la que se expresan ideas, operaciones y relaciones utilizando símbolos,
+    números, signos y expresiones. Permite representar problemas de manera precisa y facilita su análisis y solución.</p>
+
+<p><b>¿Para qué sirve el lenguaje matemático?</b></p>
+<ul>
+    <li>Permite expresar situaciones de la vida real de forma exacta.</li>
+    <li>Facilita la resolución de problemas.</li>
+    <li>Ayuda a comunicar ideas de manera clara y universal.</li>
+    <li>Es fundamental en ciencias, ingeniería, tecnología y economía.</li>
+</ul>
+
+<p><b>Elementos del lenguaje matemático:</b></p>
+<ul>
+    <li><b>Números:</b> representan cantidades.</li>
+    <li><b>Símbolos matemáticos:</b> como +, -, ×, ÷, = , &lt;, &gt;.</li>
+    <li><b>Expresiones:</b> combinaciones de números y símbolos.</li>
+    <li><b>Ecuaciones:</b> igualdades que contienen incógnitas.</li>
+</ul>
+
+<p><b>Ejemplos de lenguaje matemático:</b></p>
+<ul>
+    <li>5 + 3 = 8</li>
+    <li>a + b = c</li>
+    <li>2x + 4 = 10</li>
+</ul>
+
+<p>Gracias al lenguaje matemático es posible representar información de manera ordenada, lógica y comprensible para cualquier persona en el mundo.</p>
+</p>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido2', 'flecha2')">
+  <span class="flecha" id="flecha2">▶</span>
+  2. LEYES DE LOS EXPONENTES
+</h2>
+<div id="contenido2" class="contenido">
+<p><b>Explicacion...</b></p>
+<p><p><b>Leyes de los Exponentes</b></p>
+<p>Las leyes de los exponentes son reglas matemáticas que permiten simplificar y operar expresiones que contienen potencias. Gracias a ellas es posible realizar multiplicaciones, divisiones y potencias de manera más sencilla y ordenada.</p>
+
+<br>
+
+<p><b>1. Producto de potencias con la misma base</b></p>
+<p>Cuando se multiplican potencias con la misma base, se suman los exponentes.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Regla</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></td>
+<td>2<sup>3</sup> × 2<sup>2</sup></td>
+<td>2<sup>5</sup> = 32</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>2. Cociente de potencias con la misma base</b></p>
+<p>Cuando se dividen potencias con la misma base, se restan los exponentes.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Regla</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup></td>
+<td>5<sup>4</sup> ÷ 5<sup>2</sup></td>
+<td>5<sup>2</sup> = 25</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>3. Potencia de una potencia</b></p>
+<p>Cuando una potencia tiene otro exponente, los exponentes se multiplican.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Regla</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>(a<sup>m</sup>)<sup>n</sup> = a<sup>m·n</sup></td>
+<td>(3<sup>2</sup>)<sup>3</sup></td>
+<td>3<sup>6</sup> = 729</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>4. Potencia de un producto</b></p>
+<p>El exponente se distribuye a cada factor dentro del paréntesis.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Regla</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>(ab)<sup>n</sup> = a<sup>n</sup> · b<sup>n</sup></td>
+<td>(2 × 3)<sup>2</sup></td>
+<td>2<sup>2</sup> × 3<sup>2</sup> = 4 × 9 = 36</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>5. Exponente cero</b></p>
+<p>Toda base diferente de cero elevada a la potencia cero es igual a 1.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Regla</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>a<sup>0</sup> = 1</td>
+<td>7<sup>0</sup></td>
+<td>1</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>6. Exponente negativo</b></p>
+<p>Un exponente negativo indica el inverso multiplicativo de la base.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Regla</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>a<sup>-n</sup> = 1 / a<sup>n</sup></td>
+<td>2<sup>-3</sup></td>
+<td>1 / 2<sup>3</sup> = 1/8</td>
+</tr>
+</table>
+
+<br>
+
+<p>Las leyes de los exponentes son fundamentales en álgebra, ya que permiten simplificar expresiones y resolver operaciones de manera rápida, clara y correcta.</p>
+</p>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+
+<h2 class="desplegable" onclick="toggleContenido('contenido3', 'flecha3')">
+  <span class="flecha" id="flecha3">▶</span>
+  3. ALGEBRA
+</h2>
+<div id="contenido3" class="contenido">
+<p><b>Explicacion....</b></p>
+<p><p><b>¿Qué es el Álgebra?</b></p>
+<p>El álgebra es una rama de las matemáticas que utiliza letras, símbolos y números para representar valores desconocidos y realizar operaciones. 
+Nos ayuda a resolver problemas, expresar relaciones y entender situaciones de la vida real mediante ecuaciones y expresiones.</p>
+
+<br>
+
+<p><b>¿Para qué sirve el Álgebra?</b></p>
+<ul>
+    <li>Permite resolver problemas matemáticos de forma más general.</li>
+    <li>Ayuda a representar situaciones reales con ecuaciones.</li>
+    <li>Es fundamental en ciencias, ingeniería, economía y tecnología.</li>
+    <li>Desarrolla el pensamiento lógico y analítico.</li>
+</ul>
+
+<br>
+
+<p><b>Elementos del Álgebra</b></p>
+<ul>
+    <li><b>Variables:</b> letras que representan valores desconocidos (x, y, a, b).</li>
+    <li><b>Constantes:</b> números fijos (2, 5, 10...).</li>
+    <li><b>Expresión algebraica:</b> combinación de números, letras y operaciones.
+        <br><b>Ejemplo:</b> 3x + 2
+    </li>
+    <li><b>Ecuación:</b> igualdad que contiene una incógnita.
+        <br><b>Ejemplo:</b> x + 5 = 10
+    </li>
+</ul>
+
+<br>
+
+<p><b>Ejemplos sencillos</b></p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Situación</th>
+<th>Expresión</th>
+<th>Resultado</th>
+</tr>
+
+<tr>
+<td>Sumar 5 a un número</td>
+<td>x + 5</td>
+<td>Si x = 7, entonces 7 + 5 = 12</td>
+</tr>
+
+<tr>
+<td>El doble de un número</td>
+<td>2x</td>
+<td>Si x = 4, entonces 2(4) = 8</td>
+</tr>
+
+<tr>
+<td>Resolver ecuación</td>
+<td>x + 3 = 9</td>
+<td>x = 6</td>
+</tr>
+</table>
+
+<br>
+
+<p>El álgebra no solo son números, también es una forma de pensar. 
+Nos enseña a analizar, razonar y encontrar soluciones de manera ordenada. 
+¡Es una herramienta poderosa que usamos más de lo que creemos en la vida diaria!</p>
+</p>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2 class="desplegable" onclick="toggleContenido('contenido4', 'flecha4')">
+  <span class="flecha" id="flecha4">▶</span>
+  4. MCM
+</h2>
+<div id="contenido4" class="contenido">
+<p><b>Explicacion....</b></p>
+<p><p><b>¿Qué es el Mínimo Común Múltiplo?</b></p>
+<p>El <b>Mínimo Común Múltiplo (MCM)</b> es el número más pequeño que es múltiplo común de dos o más números. 
+Es decir, es el número más pequeño que ambos pueden alcanzar al multiplicarse.</p>
+
+<br>
+
+<p><b>¿Para qué sirve el MCM?</b></p>
+<ul>
+    <li>Para resolver problemas con fracciones.</li>
+    <li>Para sincronizar tiempos o ciclos repetitivos.</li>
+    <li>Para trabajar con múltiplos en matemáticas.</li>
+</ul>
+
+<br>
+
+<p><b>Ejemplo sencillo:</b></p>
+<p>Encuentra el MCM de 4 y 6.</p>
+
+<table border="1" cellpadding="6">
+<tr>
+<th>Número</th>
+<th>Múltiplos</th>
+</tr>
+<tr>
+<td>4</td>
+<td>4, 8, 12, 16, 20, 24...</td>
+</tr>
+<tr>
+<td>6</td>
+<td>6, 12, 18, 24, 30...</td>
+</tr>
+</table>
+
+<p><b>Resultado:</b> El múltiplo común más pequeño es <b>12</b>, por lo tanto el MCM de 4 y 6 es <b>12</b>.</p>
+
+<br>
+
+<p><b>Otro ejemplo:</b></p>
+<p>MCM de 3, 5 y 6 = <b>30</b></p>
+
+<br>
+
+<p>El Mínimo Común Múltiplo es una herramienta muy útil en matemáticas porque nos ayuda a trabajar 
+    de manera ordenada con números que deben coincidir en un mismo valor. ¡Es más fácil de lo que parece
+     cuando entiendes cómo funciona!</p>
+</p>
+
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+
+<h2 class="desplegable" onclick="toggleContenido('contenido5', 'flecha5')">
+  <span class="flecha" id="flecha5">▶</span>
+  5. PROPIEADES DE LOS EXPONENTES 
+</h2>
+<div id="contenido5" class="contenido">
+<p><b>Explicacion....</b></p>
+<p><p><b>Propiedades de los Exponentes</b></p>
+<p>Las propiedades o leyes de los exponentes nos permiten simplificar operaciones con potencias de manera rápida y ordenada. Son reglas fundamentales del álgebra que facilitan la resolución de expresiones matemáticas.</p>
+
+<br>
+
+<p><b>1. Producto de potencias con la misma base</b></p>
+<p>Cuando se multiplican potencias con la misma base, se suman los exponentes.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Propiedad</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></td>
+<td>2<sup>3</sup> × 2<sup>2</sup></td>
+<td>2<sup>5</sup> = 32</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>2. Cociente de potencias con la misma base</b></p>
+<p>Cuando se dividen potencias con la misma base, se restan los exponentes.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Propiedad</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup></td>
+<td>5<sup>4</sup> ÷ 5<sup>2</sup></td>
+<td>5<sup>2</sup> = 25</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>3. Potencia de una potencia</b></p>
+<p>Cuando una potencia está elevada a otro exponente, se multiplican los exponentes.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Propiedad</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>(a<sup>m</sup>)<sup>n</sup> = a<sup>m·n</sup></td>
+<td>(3<sup>2</sup>)<sup>3</sup></td>
+<td>3<sup>6</sup> = 729</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>4. Potencia de un producto</b></p>
+<p>El exponente se aplica a cada factor dentro del paréntesis.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Propiedad</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>(ab)<sup>n</sup> = a<sup>n</sup> · b<sup>n</sup></td>
+<td>(2 × 3)<sup>2</sup></td>
+<td>2<sup>2</sup> × 3<sup>2</sup> = 4 × 9 = 36</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>5. Exponente cero</b></p>
+<p>Toda base diferente de cero elevada a la potencia cero es igual a 1.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Propiedad</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>a<sup>0</sup> = 1</td>
+<td>7<sup>0</sup></td>
+<td>1</td>
+</tr>
+</table>
+
+<br>
+
+<p><b>6. Exponente negativo</b></p>
+<p>Un exponente negativo indica el inverso de la base elevada al exponente positivo.</p>
+<table border="1" cellpadding="6">
+<tr>
+<th>Propiedad</th>
+<th>Ejemplo</th>
+<th>Resultado</th>
+</tr>
+<tr>
+<td>a<sup>-n</sup> = 1 / a<sup>n</sup></td>
+<td>4<sup>-2</sup></td>
+<td>1 / 4<sup>2</sup> = 1/16</td>
+</tr>
+</table>
+
+<br>
+
+<p>Estas propiedades permiten trabajar con expresiones más complejas de manera sencilla, ayudando a resolver problemas matemáticos con mayor facilidad.</p>
+</p>
+</div>
+
+<script>
+  function toggleContenido(contenidoId, flechaId) {
+    const contenido = document.getElementById(contenidoId);
+    const flecha = document.getElementById(flechaId);
+
+    // Alterna la visibilidad del contenido
+    if (contenido.style.display === "block") {
+        contenido.style.display = "none";
+        flecha.classList.remove("girada");
+    } else {
+        contenido.style.display = "block";
+        flecha.classList.add("girada");
+    }
+}
+</script>
+
+<h2>Cuestionario – Pensamiento Matematico</h2>
+
+
+<form id="quiz">
+
+    <h3>1. ¿Que es el lenguaje matematico?</h3>
+    <label><input type="radio" name="p1" value="a"> La forma de expresar ideas matemáticas mediante números, 
+        símbolos y expresiones</label><br>
+    <label><input type="radio" name="p1" value="b"> Un lenguaje que solo se usa en computación</label><br>
+    <label><input type="radio" name="p1" value="c"> Un método para dibujar figuras</label><br>
+
+    <h3>2. ¿Para qué sirve el Álgebra?</h3>
+    <label><input type="radio" name="p2" value="a"> Para decorar ecuaciones</label><br>
+    <label><input type="radio" name="p2" value="b"> Solo para sumar números grandes</label><br>
+    <label><input type="radio" name="p2" value="c"> Para representar valores desconocidos y resolver
+         problemas mediante variables y ecuaciones</label><br>
+
+    <h3>3.¿Qué es el Mínimo Común Múltiplo (MCM)?</h3>
+    <label><input type="radio" name="p3" value="a"> El número mayor entre dos números</label><br>
+    <label><input type="radio" name="p3" value="b"> El número más pequeño que es múltiplo común de dos o más números</label><br>
+    <label><input type="radio" name="p3" value="c">El número que se obtiene al restar dos números </label><br>
+
+    <h3>4.4. ¿Qué sucede cuando se multiplican potencias con la misma base?</h3>
+    <label><input type="radio" name="p4" value="a"> Se restan los exponentes</label><br>
+    <label><input type="radio" name="p4" value="b"> Se suman los exponentes</label><br>
+    <label><input type="radio" name="p4" value="c"> E resultado siempre es 0</label><br>
+
+    <h3>5. ¿Qué significa un exponente negativo?</h3>
+    <label><input type="radio" name="p5" value="a"> Que representa el inverso de la base elevada al exponente positivo</label><br>.
+    <label><input type="radio" name="p5" value="b">Que el número es menor que cero</label><br>
+    <label><input type="radio" name="p5" value="c"> Que la potencia se vuelve infinita</label><br>
+
+    <br>
+    <button type="button" onclick="calificar()">Calificar</button>
+</form>
+
+<p id="resultado" style="font-size:20px; font-weight:bold; margin-top:20px;"></p>
+
+<script>
+function calificar() {
+    let correctas = {
+        p1: "a",
+        p2: "c",
+        p3: "b",
+        p4: "b",
+        p5: "a"
+    };
+
+    let puntos = 0;
+    let total = Object.keys(correctas).length;
+
+    for (let p in correctas) {
+        let seleccionada = document.querySelector('input[name="'+p+'"]:checked');
+        if (seleccionada && seleccionada.value === correctas[p]) {
+            puntos++;
+        }
+    }
+
+    document.getElementById("resultado").innerText =
+        "Obtuviste " + puntos + " de " + total + " respuestas correctas.";
+        document.getElementById("quiz").reset();
+}
+</script>
+</body>
+</html>
